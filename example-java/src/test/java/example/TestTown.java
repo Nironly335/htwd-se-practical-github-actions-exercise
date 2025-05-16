@@ -61,7 +61,7 @@ class TestTown {
   void test2_TownResidents() {
     String message = "residents is less 0";
 
-    /*
+    
     // assert 1 - less 0 -> IllegalArgumentException
     assertThrows(IllegalArgumentException.class, () -> new Town(testValue1Name,
         -1), message + " (constructor)");
@@ -69,15 +69,15 @@ class TestTown {
       Town t = new Town(testValue1Name, testValue1Residents);
       t.setResidents(-2);
     }, message + " (set)");
-    */
     
+    /*
       // assert 1 - less 0 -> 0
       Town t = new Town(testValue1Name, -1);
       assertFalse(t.getResidents() < 0, message + " (constructor)");
       t = new Town(testValue1Name, testValue1Residents);
       t.setResidents(-2);
       assertFalse(t.getResidents() < 0, message + " (set)");
-     
+    */ 
   }
 
   @DisplayName("T03: Get correct town name")

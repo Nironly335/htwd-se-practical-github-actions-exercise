@@ -31,6 +31,9 @@ public class Town {
   }
 
   public void setResidents(int residents) {
+    if (residents < 0) {
+      throw new IllegalArgumentException();
+    }
     this.residents = residents;
   }
 
