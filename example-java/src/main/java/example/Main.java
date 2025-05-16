@@ -13,6 +13,7 @@ public class Main {
     }
     System.out.println(t.getName());
     System.out.println(t.getResidents());
+    System.out.println("Änderung im Code.");
   }
 
 }
