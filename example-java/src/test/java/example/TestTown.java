@@ -71,12 +71,12 @@ class TestTown {
     }, message + " (set)");
     */
     
-     * // assert 1 - less 0 -> 0
-     * Town t = new Town(testValue1Name, -1);
-     * assertFalse(t.getResidents() < 0, message + " (constructor)");
-     * t = new Town(testValue1Name, testValue1Residents);
-     * t.setResidents(-2);
-     * assertFalse(t.getResidents() < 0, message + " (set)");
+      // assert 1 - less 0 -> 0
+      Town t = new Town(testValue1Name, -1);
+      assertFalse(t.getResidents() < 0, message + " (constructor)");
+      t = new Town(testValue1Name, testValue1Residents);
+      t.setResidents(-2);
+      assertFalse(t.getResidents() < 0, message + " (set)");
      
   }
 
